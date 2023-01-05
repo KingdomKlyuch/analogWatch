@@ -1,0 +1,56 @@
+.clock {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 20px solid #333;
+    background-color: #ddd;
+    position: relative;
+  }
+  
+  .clock .hour-hand,
+  .clock .minute-hand,
+  .clock .second-hand {
+    width: 50%;
+    height: 6px;
+    background-color: #000;
+    border-radius: 3px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: 0% 50%;
+    transform: rotate(90deg);
+    margin-top: -3px;;
+  }
+  
+  .clock .hour-hand {
+    z-index: 1;
+    width: 32%;
+  }
+
+  .clock .minute-hand {
+    width: 48%;
+    height: 4px;
+    background-color: #000;
+    border-radius: 2px;
+    z-index: 2;
+  }
+  
+  .clock .second-hand {
+    width: 49%;
+    height: 2px;
+    background-color: red;
+    border-radius: 1px;
+    z-index: 3;
+  }
+  
+  .clock .center {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
