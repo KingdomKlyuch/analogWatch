@@ -1,18 +1,22 @@
 .clock {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    border: 20px solid #333;
-    background-color: #ddd;
-    position: relative;
-  }
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+  padding: 20px;
+  border: 20px solid #333;
+  background: url('https://w7.pngwing.com/pngs/181/1002/png-transparent-rolex-datejust-rolex-milgauss-watch-rolex-day-date-rolex.png')
+   no-repeat center center;
+  background-size: cover;
+  position: relative;
+}
+
   
   .clock .hour-hand,
   .clock .minute-hand,
   .clock .second-hand {
     width: 50%;
     height: 6px;
-    background-color: #000;
+    background-color: rgb(190, 190, 190);
     border-radius: 3px;
     position: absolute;
     top: 50%;
@@ -22,15 +26,17 @@
     margin-top: -3px;;
   }
   
-  .clock .hour-hand {
-    z-index: 1;
-    width: 32%;
-  }
+.clock .hour-hand {
+  z-index: 1;
+  width: 32%;
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+
 
   .clock .minute-hand {
     width: 48%;
     height: 4px;
-    background-color: #000;
+    background-color: rgb(160, 160, 160);
     border-radius: 2px;
     z-index: 2;
   }
