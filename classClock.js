@@ -4,17 +4,14 @@ class Clock {
     this.minuteHand = document.querySelector('.minute-hand');
     this.secondHand = document.querySelector('.second-hand');
   }
-
   setDate() {
     const now = new Date();
-  
-
-    
     const day = now.getDate();
-    
+    const weekDay = now.getDay();
+    const weekDayName = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'][weekDay];
     const dayElement = document.querySelector('.day');
-    
-    dayElement.textContent = day;
+
+    dayElement.textContent = `${weekDayName} ${day}`;
   
     const seconds = now.getSeconds();
     const secondsDegrees = ((seconds / 60) * 360) + 90;
